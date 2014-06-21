@@ -1,0 +1,11 @@
+.countDown{
+    padding:60px 10px 10px;
+    text-align:center;
+    color:rgb(100,150,250);
+    font-size:20px;
+    text-shadow:0 0 2px rgb(0,0,0);
+}
+
+.countDown span{
+    color:rgb(255,255,255);
+}
