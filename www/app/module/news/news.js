@@ -3,6 +3,7 @@
         var moduleName='news';
         
         function render(el){
+            console.log('top')
             el.addEventListener(
                 'click',
                 handleClicks

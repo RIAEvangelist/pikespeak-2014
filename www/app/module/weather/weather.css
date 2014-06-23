@@ -1,32 +1,32 @@
-footer{
-    position:fixed;
-    bottom:0;
-    left:0;
-    width:100%;
-    height:30px;
-    padding:5px;
-    box-shadow: 0 3px 2px 1px rgba(0, 0, 0, .6);
-    z-index: 100;
-    background-image:-webkit-linear-gradient(
-        top, 
-        rgb(0, 0, 0), 
-        rgb(50, 50, 50)
-    );
-    background-image:linear-gradient(
-        top, 
-        rgb(0, 0, 0), 
-        rgb(50, 50, 50)
-    );
-    
-    color:rgb(220,220,220);
-    
-    text-align:center;
+.weatherList{
+    list-style:none;
+    padding:0;
+    margin:0;
 }
 
-footer a{
-    margin:0;
+.weatherList li{
+    padding:5px 5px 5px 8px;
+    box-shadow:inset 0 4px 8px rgb(0,0,0);
+    font-size:14px;
+}
+
+.weatherList h5{
+    margin:4px 0 0;
     padding:0;
-    color:rgb(220,220,220);
-    line-height:30px;
-    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.weatherList table{
+    margin-left:5%;
+    width:95%;
+}
+
+.weatherList thead{
+    background:rgb(50,80,150);
+    cell-padding:0;
+}
+
+.weatherList thead td{
+    padding:5px;
 }

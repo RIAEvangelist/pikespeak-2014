@@ -11,15 +11,25 @@
         }
         
         function handleClicks(e){
-            document.getElementsByClassName('screen').forEach(
-                function(el){
-                    el.classList.remove('showScreen');
-                }
-            );
+            var screens=document.getElementsByClassName('screen');
+            for(var i=0; i<screens.length; i++){
+                screens[i].classList.remove('showScreen');
+            }
             
-            document.getElementById(e.target.id).classList.add('showScreen');
+            document.getElementsByClassName(e.target.id)[0].classList.add('showScreen');
+            app.trigger('screen-open',e.target.id);
         }
         
+        
+        app.on(
+            'nav-back',
+            function(){
+                var screens=document.getElementsByClassName('screen');
+                for(var i=0; i<screens.length; i++){
+                    screens[i].classList.remove('showScreen');
+                }
+            }
+        );
         exports(moduleName,render);    
     }
 )();

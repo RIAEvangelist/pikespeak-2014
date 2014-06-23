@@ -21,7 +21,7 @@ header{
     color:rgb(255,255,255);
 }
 
-header .logo{
+header .title{
     text-align:center;
     line-height:50px;
     font-size:35px;
@@ -30,4 +30,25 @@ header .logo{
     left:0;
     width:100%;
     cursor:pointer;
+    text-transform:capitalize;
+}
+
+header .back{
+    height:100%;
+    border:none;
+    outline:none;
+    color:rgb(255,255,255);
+    font-weight:bold;
+    padding:0 15px;
+    background-image:-webkit-linear-gradient(
+        top, 
+        rgb(55, 80, 180), 
+        rgb(55, 65, 120)
+    );
+    background-image:linear-gradient(
+        top, 
+        rgb(55, 80, 180), 
+        rgb(55, 65, 120)
+    );
+    box-shadow:0 0 5px inset rgb(0,0,0);
 }

@@ -51,6 +51,11 @@ section.main{
     color:rgb(255,255,255);
 }
 
+.showScreen{
+    left:0;
+}
+
 .hidden{
-    display:none;   
+    display:none;
+    height:0px;
 }

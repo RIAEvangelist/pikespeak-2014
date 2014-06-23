@@ -7,8 +7,6 @@
                 'click',
                 handleClicks
             );
-            
-            app.trigger('log',moduleName,'READY!');
         }
         
         function handleClicks(e){
