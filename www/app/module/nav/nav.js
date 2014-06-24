@@ -17,13 +17,21 @@
             }
             
             document.getElementsByClassName(e.target.id)[0].classList.add('showScreen');
-            app.trigger('screen-open',e.target.id);
+            if(!app.data.nav)
+                app.data.nav={};
+                
+            app.data.nav.current=e.target.id;
+            app.trigger(
+                'screen-open',
+                e.target.id
+            );
         }
         
         
         app.on(
             'nav-back',
             function(){
+                app.data.nav.current=false;
                 var screens=document.getElementsByClassName('screen');
                 for(var i=0; i<screens.length; i++){
                     screens[i].classList.remove('showScreen');

@@ -1,3 +1,19 @@
+.racers{
+    height:82%;
+    overflow:auto;
+    padding-bottom:40px;
+    background-image:-webkit-linear-gradient(
+        top, 
+        rgb(20, 20, 20),
+        rgb(50, 50, 50)
+    );
+    background-image:linear-gradient(
+        top, 
+        rgb(20, 20, 20),
+        rgb(50, 50, 50)
+    );
+}
+
 .racers table{
     width:100%;    
 }
@@ -8,4 +24,22 @@
 
 .racers thead td{
     padding:5px;
+}
+
+.racers .timingFor{
+    background-image:-webkit-linear-gradient(
+        top, 
+        rgb(40, 50, 90), 
+        rgb(20, 30, 70)
+    );
+    background-image:linear-gradient(
+        top, 
+        rgb(40, 50, 90), 
+        rgb(20, 30, 70)
+    );
+    padding:12px;
+    margin:0;
+    border-bottom:1px solid rgb(255,255,255);
+    box-shadow:inset 0 4px 8px rgb(0,0,0);
+    text-align:center;
 }

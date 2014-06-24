@@ -1,66 +1,64 @@
-<hr>
-<h3>
-    Electric Motorcycles
-</h3>
-<table>
-    <thead>
-        <td>
-            Racer
-        </td>
-        <td>
-            Last Time
-        </td>
-        <td>
-            Class
-        </td>
-    </thead>
-    <tr>
-        <td>
-            Jeff Clark
-        </td>
-        <td>
-            12:25.35
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Jerimiah Johnson
-        </td>
-        <td>
-            12:26.5
-        </td>
-    </tr>
+<section data-template='class' class='hidden'>
+    <h3>
+        ${class}
+    </h3>
+    <table>
+        <thead>
+            <td>
+                Name
+            </td>
+            <td>
+                #
+            </td>
+            <td>
+                Sect. 1
+            </td>
+            <td>
+                Sect. 2
+            </td>
+            <td>
+                Sect. 3
+            </td>
+            <td>
+                Sect. 4
+            </td>
+        </thead>
+        <tbody>
+            <!-- ${racers} -->
+        </tbody>
+    </table>
+    <hr>
+</section>
+<table data-template='row' class='hidden'>
+    <tbody  data-template='row'>
+        <tr>
+            <td>
+                ${name}
+            </td>
+            <td>
+                ${number}
+            </td>
+            <td>
+                ${section1}
+            </td>
+            <td>
+                ${section2}
+            </td>
+            <td>
+                ${section3}
+            </td>
+            <td>
+                ${section4}
+            </td>
+        </tr>
+    </tbody>
 </table>
-<hr>
-<h3>
-    Exhibition Powersport
+
+
+<h3 id='timingFor' class='timingFor'>
+    loading...
 </h3>
-<table>
-    <thead>
-        <td>
-            Racer
-        </td>
-        <td>
-            Last Time
-        </td>
-        <td>
-            Class
-        </td>
-    </thead>
-    <tr>
-        <td>
-            Jeff Clark
-        </td>
-        <td>
-            12:25.35
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Jerimiah Johnson
-        </td>
-        <td>
-            12:26.5
-        </td>
-    </tr>
-</table>
+<i>All Class & Racers available for Quals and Race</i>
+<section id='timingGroups'>
+    
+</section>
